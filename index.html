@@ -2,58 +2,66 @@
 <html lang="fa" dir="rtl">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>RFDKala - هوشمندسازی مدارس</title>
-    <link rel="stylesheet" href="css/sytle.css" />
-    <!-- فونت‌های Vazirmatn و Sahel از CDN -->
-    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/sahel-font@v4.0/sahel.css" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RFDKala - هوشمندسازی کلاس‌ها</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- فونت فارسی از CDN -->
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" />
 </head>
 
-<body>
-    <header>
-        <div class="container header-inner">
-            <a href="index.html" class="logo">
-                <h1>RFDKala.ir</h1>
-                <img src="assets/images/logo.jpg" alt="لوگوی RFDKala" />
-            </a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">خانه</a></li>
-                    <li><a href="packages.html">پکیج‌ها</a></li>
-                    <li><a href="gallery.html">گالری نصب</a></li>
-                    <li><a href="pricing.html">محاسبه قیمت</a></li>
-                    <li><a href="contact.html">تماس با ما</a></li>
-                    <li><a href="support.html">پشتیبانی</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<body class="theme-dark">
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="لوگوی RFDKala" />
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">خانه</a></li>
+          <li><a href="#packages">پکیج‌ها</a></li>
+          <li><a href="#gallery">گالری نصب</a></li>
+          <li><a href="#pricing">محاسبه قیمت</a></li>
+          <li><a href="#contact">تماس با ما</a></li>
+          <li><a href="#support">پشتیبانی</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section class="slider">
-        <div class="slides fade">
-            <img src="assets/images/slider01.jpg" alt="اسلایدر 1" />
-        </div>
-        <div class="slides fade">
-            <img src="assets/images/slider02.jpg" alt="اسلایدر 2" />
-        </div>
-        <div class="slides fade">
-            <img src="assets/images/slider03.jpg" alt="اسلایدر 3" />
-        </div>
-        <div class="slider-overlay">
-            <h1>هوشمندسازی کلاس‌ها با RFDKala</h1>
-            <p>مدرن، سریع، تخصصی – با پکیج‌های Techora</p>
-            <a href="packages.html" class="btn-primary">مشاهده پکیج‌ها</a>
-        </div>
-    </section>
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="images/wave-bg.svg" alt="بک‌گراند موجی" />
+    </div>
+    <div class="hero-content">
+      <h1>هوشمندسازی کلاس‌ها با <span>RFDKala</span></h1>
+      <p>پکیج‌های تخصصی برای آینده‌ی آموزش</p>
+      <div class="hero-buttons">
+        <a href="#packages" class="btn primary">مشاهده پکیج‌ها</a>
+        <a href="#contact" class="btn secondary">دریافت مشاوره رایگان</a>
+      </div>
+    </div>
+  </section>
 
-    <section class="price-calc container">
-        <h2>محاسبه قیمت آنلاین به‌زودی</h2>
-        <p>در حال آماده‌سازی بخش محاسبه قیمت آنلاین هستیم. به زودی فعال خواهد شد.</p>
-    </section>
+  <section class="features container">
+    <div class="feature-box">
+      <img src="images/icons/expert.svg" alt="تخصص" />
+      <h3>تیم متخصص</h3>
+      <p>سال‌ها تجربه در پروژه‌های واقعی مدارس</p>
+    </div>
+    <div class="feature-box">
+      <img src="images/icons/creative.svg" alt="خلاقیت" />
+      <h3>خلاقیت کاربردی</h3>
+      <p>طراحی راهکار متناسب با نیاز هر کلاس</p>
+    </div>
+    <div class="feature-box">
+      <img src="images/icons/support.svg" alt="پشتیبانی" />
+      <h3>پشتیبانی کامل</h3>
+      <p>از نصب تا آموزش، همراه شما هستیم</p>
+    </div>
+  </section>
 
-    <script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
