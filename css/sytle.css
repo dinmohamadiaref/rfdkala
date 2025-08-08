@@ -85,7 +85,7 @@ header {
 .hero-logo {
   width: 160px;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   opacity: 0.9;
   animation: shine 15s infinite;
 }
