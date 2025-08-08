@@ -28,9 +28,7 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-.logo img {
-  height: 50px;
-}
+
 .main-nav ul {
   list-style: none;
   display: flex;
@@ -52,11 +50,11 @@ header {
 .hero {
   position: relative;
   text-align: center;
-  padding: 100px 20px;
+  padding: 60px 20px 40px;
   overflow: hidden;
 }
 .hero-bg img {
-  position: absolute;
+  position:absolute;
   top: 0;
   left: 0;
   width: 100%;
