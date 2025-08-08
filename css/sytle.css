@@ -50,7 +50,7 @@ header {
 .hero {
   position: relative;
   text-align: center;
-  padding: 40px 20px 300px;
+  padding: 40px 20px 220px;
   overflow: hidden;
 }
 .hero-bg img {
@@ -66,6 +66,7 @@ header {
   font-size: 3rem;
   margin-bottom: 10px;
   color: #ffffff;
+  /* Removed usage for brand name */
 }
 .hero-content h1 span {
   color: #60a5fa;
@@ -75,6 +76,40 @@ header {
   color: #cbd5e1;
   margin-bottom: 30px;
 }
+
+.hero-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 20px;
+  opacity: 0.9;
+  animation: fadeInScale 1.2s ease-out forwards;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.brand-name {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  margin-bottom: 30px;
+}
+
+
 .hero-buttons {
   display: flex;
   justify-content: center;
