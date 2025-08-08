@@ -50,7 +50,7 @@ header {
 .hero {
   position: relative;
   text-align: center;
-  padding: 40px 60px 40px;
+  padding: 40px 40px 100px;
   overflow: hidden;
 }
 .hero-bg img {
