@@ -171,6 +171,7 @@ header {
   .main-nav ul {
     flex-direction: column;
     gap: 10px;
+    display: none;
   }
   .hero-content h1 {
     font-size: 2rem;
@@ -179,19 +180,7 @@ header {
     flex-direction: column;
     align-items: center;
   }
-}
 
-
-/* آیکون ساندویچی */
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-  color: #fff;
-}
-
-/* حالت موبایل */
-@media (max-width: 768px) {
   .nav-links {
     display: none;
     flex-direction: column;
@@ -208,5 +197,8 @@ header {
   }
   .menu-toggle {
     display: block;
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
   }
 }
