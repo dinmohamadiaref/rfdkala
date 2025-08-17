@@ -29,7 +29,6 @@ header {
   justify-content: space-between;
 }
 
-
 /* منوی اصلی */
 .nav-links {
   list-style: none;
@@ -92,7 +91,6 @@ header {
   animation: shine 15s infinite;
 }
 
-
 .brand-name {
   font-size: 2.5rem;
   font-weight: 800;
@@ -105,7 +103,6 @@ header {
   color: #cbd5e1;
   margin: 0;
 }
-
 
 .hero-buttons {
   display: flex;
@@ -163,7 +160,6 @@ header {
   color: #cbd5e1;
 }
 
-/* ریسپانسیو */
 /* دسکتاپ */
 @media (min-width: 769px) {
   .nav-links {
@@ -202,5 +198,13 @@ header {
     font-size: 28px;
     cursor: pointer;
     color: #fff;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .features {
+    flex-direction: column;
+    align-items: center;
   }
 }
