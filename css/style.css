@@ -29,20 +29,22 @@ header {
   justify-content: space-between;
 }
 
-.main-nav ul {
+
+/* منوی اصلی */
+.nav-links {
   list-style: none;
-  display: flex;
-  gap: 25px;
   padding: 0;
   margin: 0;
 }
-.main-nav ul li a {
+
+/* لینک‌ها */
+.nav-links li a {
   color: #ffffff;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
-.main-nav ul li a:hover {
+.nav-links li a:hover {
   color: #cbd5e1;
 }
 
@@ -162,31 +164,31 @@ header {
 }
 
 /* ریسپانسیو */
+/* دسکتاپ */
+@media (min-width: 769px) {
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/* موبایل */
 @media (max-width: 768px) {
   .header-inner {
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
   }
-  .main-nav ul {
-    flex-direction: column;
-    gap: 10px;
-    display: none;
-  }
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-  .features {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .nav-links {
     display: none;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0,0,0,0.85);
     position: absolute;
-    top: 60px; /* زیر هدر */
+    top: 60px;
     right: 0;
     width: 200px;
     padding: 20px;
