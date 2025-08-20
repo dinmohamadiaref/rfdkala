@@ -1,0 +1,32 @@
+[
+  {
+    "package": "base",
+    "school": "دبیرستان غیر انتفاعی دانش",
+    "images": [
+      "images/gallery/TechoraBase_Danesh_01.jpg",
+      "images/gallery/TechoraBase_Danesh_02.jpg",
+      "images/gallery/TechoraBase_Danesh_03.jpg",
+      "images/gallery/TechoraBase_Danesh_04.jpg"
+    ]
+  },
+  {
+    "package": "prime",
+    "school": "دبستان تدبیر",
+    "images": [
+      "images/gallery/TechoraBase_Danesh_01.jpg",
+      "images/gallery/TechoraBase_Danesh_02.jpg",
+      "images/gallery/TechoraBase_Danesh_03.jpg",
+      "images/gallery/TechoraBase_Danesh_04.jpg"
+    ]
+  },
+  {
+    "package": "nova",
+    "school": "مدرسه پیامبران",
+    "images": [
+      "images/gallery/TechoraBase_Danesh_01.jpg",
+      "images/gallery/TechoraBase_Danesh_02.jpg",
+      "images/gallery/TechoraBase_Danesh_03.jpg",
+      "images/gallery/TechoraBase_Danesh_04.jpg"
+    ]
+  }
+]

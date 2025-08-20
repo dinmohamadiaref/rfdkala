@@ -22,11 +22,17 @@ header {
   background: linear-gradient(to left, #1e3a8a, #4f46e5);
   padding: 20px 0;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  position: relative;
+  z-index: 1000;
 }
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  gap: 20px;
 }
 
 /* منوی اصلی */
@@ -34,6 +40,9 @@ header {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  gap: 25px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 /* لینک‌ها */
@@ -42,20 +51,67 @@ header {
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
+  display: block;
+  padding: 10px 0;
 }
 .nav-links li a:hover {
   color: #cbd5e1;
+}
+
+/* منوی موبایل - slide-out sidebar */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #fff;
+  background: none;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background: rgba(15, 23, 42, 0.95);
+    flex-direction: column;
+    padding: 60px 20px 20px;
+    gap: 30px;
+    box-shadow: -4px 0 12px rgba(0,0,0,0.7);
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1100;
+    border-radius: 8px 0 0 8px;
+  }
+  .nav-links.show {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .header-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 /* سکشن قهرمان */
 .hero {
   position: relative;
   text-align: center;
-  padding: 40px 20px 220px;
+  padding: 60px 20px 220px;
   overflow: hidden;
+  max-width: 1200px;
+  margin: auto;
 }
 .hero-bg img {
-  position:absolute;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -67,7 +123,6 @@ header {
   font-size: 3rem;
   margin-bottom: 10px;
   color: #ffffff;
-  /* Removed usage for brand name */
 }
 .hero-content h1 span {
   color: #60a5fa;
@@ -108,6 +163,8 @@ header {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 .btn {
   padding: 14px 30px;
@@ -116,10 +173,13 @@ header {
   font-weight: bold;
   text-decoration: none;
   transition: all 0.3s ease;
+  cursor: pointer;
+  white-space: nowrap;
 }
 .btn.primary {
   background: linear-gradient(to right, #6366f1, #3b82f6);
   color: white;
+  border: none;
 }
 .btn.primary:hover {
   transform: scale(1.05);
@@ -139,12 +199,15 @@ header {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  padding: 60px 0;
+  padding: 60px 20px;
   flex-wrap: wrap;
   gap: 40px;
+  max-width: 1200px;
+  margin: auto;
 }
 .feature-box {
   max-width: 280px;
+  flex: 1 1 280px;
 }
 .feature-box img {
   height: 60px;
@@ -160,51 +223,66 @@ header {
   color: #cbd5e1;
 }
 
-/* دسکتاپ */
+/* مدیا کوئری‌ها */
 @media (min-width: 769px) {
   .nav-links {
-    display: flex;
+    display: flex !important;
     flex-direction: row;
     gap: 25px;
+    position: static;
+    height: auto;
+    width: auto;
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+    transform: none !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    border-radius: 0;
   }
   .menu-toggle {
     display: none;
+  }
+  .header-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+  .features {
+    flex-direction: row;
+    align-items: stretch;
   }
 }
 
-/* موبایل */
-@media (max-width: 768px) {
-  .header-inner {
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  .hero-buttons {
     flex-direction: column;
-    align-items: flex-start;
     gap: 15px;
   }
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: rgba(0,0,0,0.85);
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 200px;
-    padding: 20px;
-    border-radius: 8px;
-  }
-  .nav-links.show {
-    display: flex;
-  }
-  .menu-toggle {
-    display: block;
-    font-size: 28px;
-    cursor: pointer;
-    color: #fff;
-  }
-
-  .hero-content h1 {
-    font-size: 2rem;
-  }
   .features {
-    flex-direction: column;
-    align-items: center;
+    padding: 40px 10px;
+    gap: 30px;
   }
+}
+
+/* overlay برای منوی موبایل */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: none;
+  z-index: 1000;
+}
+
+.overlay.active {
+  display: block;
 }

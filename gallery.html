@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>گالری تصاویر - RFDKALA</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/gallery.css">
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" />
+</head>
+<body class="theme-dark">
+<header id="site-header" class="site-header"></header>
+
+<main class="container gallery-page">
+  <h1 class="page-title">گالری تصاویر</h1>
+
+  <!-- فیلترها -->
+  <div class="gallery-filter package" id="package-filter" role="toolbar" aria-label="فیلتر پکیج‌ها">
+    <button data-filter="all" class="active">همه</button>
+    <button data-filter="prime">Techora Prime</button>
+    <button data-filter="base">Techora Base</button>
+    <button data-filter="pi">Techora Pi</button>
+    <button data-filter="view">Techora View</button>
+    <button data-filter="nova">Techora Nova</button>
+    <button data-filter="novax">Techora NovaX</button>
+    <button data-filter="sound">Techora Sound</button>
+    <button data-filter="link">Techora Link</button>
+    <button data-filter="admin">Techora Admin</button>
+  </div>
+
+  <!-- گالری تصاویر -->
+  <div class="gallery-grid" id="gallery-grid">
+    <!-- تصاویر توسط JS داینامیک اضافه می‌شوند -->
+  </div>
+</main>
+
+<script src="js/menu.js"></script>
+<script src="js/gallery.js"></script>
+</body>
+</html>

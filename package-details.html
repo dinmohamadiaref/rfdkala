@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>جزئیات پکیج - RFDKala</title>
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/package-details.css">
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" />
+</head>
+<body class="theme-dark">
+
+
+<header id="site-header"></header>
+
+<main class="package-details container">
+  <div class="package-hero">
+    <img id="package-image" src="images/packages/default.jpg" alt="پکیج" />
+    <h1 id="package-title">نام پکیج</h1>
+    <p id="package-tagline">شعار یا توضیح کوتاه پکیج</p>
+  </div>
+
+  <section class="package-info">
+    <h2>مشخصات فنی</h2>
+    <div id="package-specs">
+      <!-- جدول مشخصات به صورت داینامیک توسط JS بارگذاری می‌شود -->
+    </div>
+  </section>
+
+  <section class="package-description">
+    <h2>توضیحات</h2>
+    <p id="package-description">توضیحات کامل پکیج اینجا نمایش داده می‌شود.</p>
+  </section>
+</main>
+
+<script src="js/menu.js"></script>
+<script src="js/script.js"></script>
+<script src="js/package-details.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const packageTitleEl = document.getElementById('package-title');
+  let packageId = '';
+  if (packageTitleEl) {
+    // تبدیل به نام کلیدی کوچک و بدون فاصله
+    packageId = packageTitleEl.textContent.trim().toLowerCase().replace(/\s+/g, '');
+  }
+});
+</script>
+</body>
+</html>
